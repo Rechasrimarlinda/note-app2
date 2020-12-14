@@ -47,3 +47,13 @@ function confirmDelete(){
 
   document.getElementById("note-text").value = '';
 }
+
+function color(){
+ // var color = ['#c2ff3d'];
+  var random_colors = ["#c2ff3d","#ff3de8","#3dc2ff","#04e022","#bc83e6","#ebb328","#ekb123"];
+
+  if(i > random_colors.length - 1){
+    i = 0;
+  }
+  return random_colors[i++];
+}
