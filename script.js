@@ -28,3 +28,22 @@ function createNote(){
 
   node1.setAttribute("style", "width:250px; height:250px; font-size:26px; padding:25px; margin-top:10px; margin-left: 20px; overflow:hidden; box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75)")
 
+  node1.style.background = color();
+
+  node0.appendChild(node1);
+  
+  container2.insertAdjacentElement("beforeend", node0);
+
+  node0.addEventListener("dblclick", function(){
+    confirmDelete();
+  });
+
+function confirmDelete(){
+  var x = confirm("Are you sure ?");
+  if(x){
+      node0.remove();
+  }
+}
+
+  document.getElementById("note-text").value = '';
+}
