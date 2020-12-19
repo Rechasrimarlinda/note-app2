@@ -2,13 +2,11 @@
     padding: 0;
     margin: 0;
   }
-  
   body{
     background-color:  lightskyblue;
     font-family: "Architects Daughter";
     font-size: 24px;
   }
-  
   .main-container{
     width: 95%;
     margin: auto;
@@ -16,7 +14,6 @@
   .container1{
     margin-left: 85%;
   }
-  
   .container2{
     display: flex;
     justify-content: flex-start;
@@ -24,7 +21,6 @@
     margin-top: 20px;
     margin-left: 5%;
   }
-  
   .container3{
     display: none;
     position: absolute;
